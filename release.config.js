@@ -42,7 +42,12 @@ module.exports = {
             },
         ],
         '@semantic-release/changelog',
-        '@semantic-release/npm',
+        [
+            '@semantic-release/npm',
+            {
+                npmPublish: false,
+            }
+        ],
         '@semantic-release/exec',
         [
             '@semantic-release/github',
