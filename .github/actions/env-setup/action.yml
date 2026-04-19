@@ -1,0 +1,32 @@
+name: 'Setup environment'
+author: vladislavkovaliov
+description: 'Common setup steps for Continues Integration workflows'
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Get Node.js version
+      id: node-versin
+      with:
+        node-version: ./.github/action/get-node-version
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v
+      with:
+        node-version: ${{ steps.node-versin.outputs.version }}
+        cache: 'npm'
+
+    - name: Install deps
+      shell: bash
+      run: npm ci
+
+    - name: Read version from package.json
+      id: package-version
+      shell: bash
+      run: echo "version=${node -p "require('./package.json').engines.version"}" >> $GITHUB_OUTPUT
+
+outputs:
+  package-version:
+    description: 'Package version from package.json'
+    value: ${{ steps.package-version.outputs.version }}

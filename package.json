@@ -1,0 +1,22 @@
+{
+  "name": "resource-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint:fix": "npx @biomejs/biome format --write src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "2.4.12",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": "20",
+    "npm": "10"
+  }
+}

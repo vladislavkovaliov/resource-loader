@@ -1,0 +1,10 @@
+name: Continuos Integration
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  env-setup:
+    uses: ./.github/actions/env-setup
