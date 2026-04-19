@@ -1,0 +1,51 @@
+name: 'Semantic Release'
+description: 'Reusable semantic-release action for automated versioning and publishing'
+
+inputs:
+  branch:
+    description: 'Branch to run semantic-release on'
+    required: true
+    default: 'main'
+  node-version:
+    description: 'Node.js version to use'
+    required: false
+    default: '24'
+
+outputs:
+  new_release_published:
+    description: 'Whether a new release was published'
+    value: ${{ steps.semantic.outputs.new_release_published }}
+  new_release_version:
+    description: 'The new release version'
+    value: ${{ steps.semantic.outputs.new_release_version }}
+  new_release_major_version:
+    description: 'The major version number'
+    value: ${{ steps.semantic.outputs.new_release_major_version }}
+  new_release_minor_version:
+    description: 'The minor version number'
+    value: ${{ steps.semantic.outputs.new_release_minor_version }}
+  new_release_patch_version:
+    description: 'The patch version number'
+    value: ${{ steps.semantic.outputs.new_release_patch_version }}
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Semantic Release
+      id: semantic
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: |
+        npx --package semantic-release \
+            --package @semantic-release/commit-analyzer \
+            --package @semantic-release/release-notes-generator \
+            --package @semantic-release/changelog \
+            --package @semantic-release/npm \
+            --package @semantic-release/exec \
+            --package conventional-changelog-conventionalcommits \
+            semantic-release

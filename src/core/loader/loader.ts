@@ -151,7 +151,7 @@ export class LoaderUtils {
         options?: {
             globalVar?: string;
             destroy?: () => void;
-        }
+        },
     ): void {
         if (!this.isBrowser()) {
             return;
