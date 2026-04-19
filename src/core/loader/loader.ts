@@ -153,7 +153,9 @@ export class LoaderUtils {
             destroy?: () => void;
         }
     ): void {
-        if (!this.isBrowser()) return;
+        if (!this.isBrowser()) {
+            return;
+        }
 
         const target = new URL(src, window.location.origin).href;
 
