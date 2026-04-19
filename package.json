@@ -2,6 +2,7 @@
   "name": "resource-loader",
   "version": "1.0.0",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "lint:fix": "npx @biomejs/biome format --write src",
     "test": "node --import tsx --test src/core/loader/loader.test.ts",

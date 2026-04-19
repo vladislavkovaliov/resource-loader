@@ -142,9 +142,7 @@ test("loadScript resolves if already loaded", async () => {
 
     globalThis.document = {
         head: {
-            querySelectorAll: () => [
-                { src: "https://test/a.js" },
-            ],
+            querySelectorAll: () => [{ src: "https://test/a.js" }],
         },
     } as any;
 
