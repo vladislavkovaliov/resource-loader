@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "lint:fix": "npx @biomejs/biome format --write src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --import tsx --test src/core/loader/loader.test.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
     "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   },
   "engines": {
