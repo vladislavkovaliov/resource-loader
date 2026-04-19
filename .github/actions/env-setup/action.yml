@@ -7,14 +7,14 @@ runs:
 
   steps:
     - name: Get Node.js version
-      id: node-versin
+      id: node-version
       with:
         node-version: ./.github/action/get-node-version
 
     - name: Set up Node.js
       uses: actions/setup-node@v
       with:
-        node-version: ${{ steps.node-versin.outputs.version }}
+        node-version: ${{ steps.node-version.outputs.version }}
         cache: 'npm'
 
     - name: Install deps
