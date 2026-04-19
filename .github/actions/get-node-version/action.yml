@@ -8,4 +8,4 @@ runs:
     - name: Read Node.js version from package.json
       id: node-version
       shell: bash
-      run: echo "version=$(node -p "require('./package.json')".engines.node)" >> $GITHUB_OUTPUT
+      run: echo "version=$(node -p "require('./package.json').engines.node")" >> $GITHUB_OUTPUT

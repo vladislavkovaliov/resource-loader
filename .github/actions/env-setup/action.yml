@@ -23,7 +23,7 @@ runs:
     - name: Read version from package.json
       id: package-version
       shell: bash
-      run: echo "version=$(node -p "require('./package.json').engines.version")" >> $GITHUB_OUTPUT
+      run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
 outputs:
   package-version:

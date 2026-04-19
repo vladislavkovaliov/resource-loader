@@ -6,22 +6,12 @@ on:
       - main
 
 jobs:
-  env-setup:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: ./.github/actions/env-setup
-
   unit:
-    needs:
-      - env-setup
-
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/env-setup
 
       - name: Unit test
         run: npm run test
