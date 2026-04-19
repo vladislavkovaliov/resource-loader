@@ -8,11 +8,10 @@ runs:
   steps:
     - name: Get Node.js version
       id: node-version
-      with:
-        node-version: ./.github/action/get-node-version
+      uses: ./.github/action/get-node-version
 
     - name: Set up Node.js
-      uses: actions/setup-node@v
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ steps.node-version.outputs.version }}
         cache: 'npm'
