@@ -1,6 +1,7 @@
 name: 'RC Branch Created'
 
 on:
+  workflow_dispatch:
 
 jobs:
   setup-rc:
