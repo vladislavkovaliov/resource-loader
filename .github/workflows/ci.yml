@@ -7,4 +7,9 @@ on:
 
 jobs:
   env-setup:
-    uses: ./.github/actions/env-setup
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/env-setup
