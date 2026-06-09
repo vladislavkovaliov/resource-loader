@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: vladislavkovaliov/wi-github-actions/.github/actions/get-node-version@main
-        id: node-version
+      - uses: vladislavkovaliov/wi-github-actions/.github/actions/env-setup@main
         with:
-          path: ./package.json
+          package-json-path: ./package.json
+          package-manager: npm
 
       - name: Unit test
         run: npm run test
