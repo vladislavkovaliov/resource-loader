@@ -8,7 +8,10 @@ on:
 jobs:
   unit:
     runs-on: ubuntu-latest
+
     steps:
+      - uses: actions/setup-node@v6
+
       - uses: vladislavkovaliov/wi-github-actions/.github/actions/get-node-version@main
         id: node-version
         with:
