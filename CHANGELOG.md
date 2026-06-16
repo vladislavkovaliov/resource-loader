@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.5.1...v1.6.0) (2026-06-16)
+
+### Features
+
+* feat: updates keywords in package.json (923bddd)
+
 ## [1.5.1](https://github.com/vladislavkovaliov/resource-loader/compare/v1.5.0...v1.5.1) (2026-06-16)
 
 ### Fixes
