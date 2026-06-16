@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.4.0...v1.5.0) (2026-06-16)
+
+### Features
+
+* feat: adds husky || true (aae7cac)
+
 ## [1.4.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.3.0...v1.4.0) (2026-06-16)
 
 ### Features
