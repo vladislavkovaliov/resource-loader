@@ -17,6 +17,9 @@
       "require": "./dist/index.cjs"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build:old": "rm -rf dist && rm -rf types && tsc",
     "build": "rm -rf dist && tsup",
@@ -26,6 +29,7 @@
   },
   "keywords": [
     "script",
+    "css",
     "stylesheet",
     "loader",
     "dynamic-loading",
