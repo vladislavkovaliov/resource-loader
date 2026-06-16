@@ -1,5 +1,5 @@
 {
-  "name": "wi-resource-loader",
+  "name": "@wsmk/wi-resource-loader",
   "version": "1.7.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
