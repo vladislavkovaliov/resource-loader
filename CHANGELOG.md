@@ -1,3 +1,9 @@
+## [1.12.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.11.0...v1.12.0) (2026-06-16)
+
+### Features
+
+* feat: replace build step in package to yml (fcafb2f)
+
 ## [1.11.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.10.0...v1.11.0) (2026-06-16)
 
 ### Features
