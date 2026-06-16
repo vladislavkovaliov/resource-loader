@@ -1,3 +1,9 @@
+## [1.5.1](https://github.com/vladislavkovaliov/resource-loader/compare/v1.5.0...v1.5.1) (2026-06-16)
+
+### Fixes
+
+* fix: private value in package.json (53d76aa)
+
 ## [1.5.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.4.0...v1.5.0) (2026-06-16)
 
 ### Features
