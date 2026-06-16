@@ -13,6 +13,11 @@ jobs:
 
 
     steps:
+      - uses: actions/checkout@v6
+      - uses: vladislavkovaliov/wi-github-actions/.github/actions/env-setup@main
+        with:
+          package-json-path: ./package.json
+          package-manager: npm
       - name: RC branch detected
         run: |
           echo "New RC branch: ${{ github.ref }}"
