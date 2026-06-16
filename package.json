@@ -22,7 +22,7 @@
     "build": "rm -rf dist && tsup",
     "lint:fix": "npx @biomejs/biome format --write src",
     "test": "node --import tsx --test src/core/loader/loader.test.ts",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "keywords": [
     "script",
