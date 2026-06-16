@@ -25,6 +25,4 @@ jobs:
         uses: ./.github/workflows/semantic-release
         with:
           branch: ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          npm-token: ${{ secrets.NPM_TOKEN }}

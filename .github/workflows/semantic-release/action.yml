@@ -10,6 +10,9 @@ inputs:
     description: 'Node.js version to use'
     required: false
     default: '24'
+  npm-token:
+    description: "NPM token for publishing"
+    required: true
 
 outputs:
   new_release_published:
@@ -40,7 +43,7 @@ runs:
       shell: bash
       env:
         GITHUB_TOKEN: ${{ github.token }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NPM_TOKEN: ${{ inputs.npm-token }}
       run: |
         npx --package semantic-release \
             --package @semantic-release/commit-analyzer \
