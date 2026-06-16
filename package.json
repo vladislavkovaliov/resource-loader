@@ -29,7 +29,8 @@
     "build": "rm -rf dist && tsup",
     "lint:fix": "npx @biomejs/biome format --write src",
     "test": "node --import tsx --test src/core/loader/loader.test.ts",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "script",
