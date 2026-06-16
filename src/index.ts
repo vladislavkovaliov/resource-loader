@@ -1,1 +1,1 @@
-export { LoaderUtils } from "#/core/loader/loader"
+export { LoaderUtils } from "#/core/loader/loader";
