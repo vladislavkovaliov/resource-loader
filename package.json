@@ -20,6 +20,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladislavkovaliov/resource-loader"
+  },
   "scripts": {
     "build:old": "rm -rf dist && rm -rf types && tsc",
     "build": "rm -rf dist && tsup",
