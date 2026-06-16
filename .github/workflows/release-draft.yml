@@ -18,6 +18,9 @@ jobs:
         with:
           package-json-path: ./package.json
           package-manager: npm
+      - name: Build
+        shell: bash
+        run: npm run build
       - name: RC branch detected
         run: |
           echo "New RC branch: ${{ github.ref }}"
