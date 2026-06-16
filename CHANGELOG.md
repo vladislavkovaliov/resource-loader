@@ -1,3 +1,9 @@
+## [1.9.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.8.0...v1.9.0) (2026-06-16)
+
+### Features
+
+* feat: updates repos.type and repo.url (b0a15af)
+
 ## [1.8.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.7.0...v1.8.0) (2026-06-16)
 
 ### Features
