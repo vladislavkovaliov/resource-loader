@@ -1,3 +1,9 @@
+## [1.11.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.10.0...v1.11.0) (2026-06-16)
+
+### Features
+
+* feat: updates yml (b7e7b6e)
+
 ## [1.10.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.9.0...v1.10.0) (2026-06-16)
 
 ### Features
