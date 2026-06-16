@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.2.0...v1.3.0) (2026-06-16)
+
+### Features
+
+* feat: updates name (7f8b8e6)
+
 ## [1.2.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.1.0...v1.2.0) (2026-06-16)
 
 ### Features
