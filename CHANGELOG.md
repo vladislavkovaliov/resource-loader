@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.9.0...v1.10.0) (2026-06-16)
+
+### Features
+
+* feat: adds pre publish script (b4def3b)
+
 ## [1.9.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.8.0...v1.9.0) (2026-06-16)
 
 ### Features
