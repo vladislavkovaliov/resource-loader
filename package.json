@@ -1,17 +1,43 @@
 {
   "name": "resource-loader",
   "version": "1.0.0",
-  "main": "index.js",
-  "private": "true",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "private": "false",
+   "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
+    "build:old": "rm -rf dist && rm -rf types && tsc",
+    "build": "rm -rf dist && tsup",
     "lint:fix": "npx @biomejs/biome format --write src",
     "test": "node --import tsx --test src/core/loader/loader.test.ts",
     "prepare": "husky"
   },
-  "keywords": [],
+  "keywords": [
+    "script",
+    "stylesheet",
+    "loader",
+    "dynamic-loading",
+    "browser",
+    "typescript",
+    "lazy-load",
+    "resource",
+    "utility"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Lightweight TypeScript library for dynamically loading and unloading scripts and stylesheets in the browser",
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run lint",
@@ -39,6 +65,7 @@
     "inquirer": "^13.4.1",
     "lint-staged": "^16.4.0",
     "semantic-release": "^25.0.3",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   },
