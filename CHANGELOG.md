@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.6.0...v1.7.0) (2026-06-16)
+
+### Features
+
+* feat: updates permission in yml (6dbb26f)
+
 ## [1.6.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.5.1...v1.6.0) (2026-06-16)
 
 ### Features
