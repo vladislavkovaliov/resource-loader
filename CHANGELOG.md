@@ -1,3 +1,11 @@
+## [1.4.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.3.0...v1.4.0) (2026-06-16)
+
+### Features
+
+* feat: updates env (886ba20)
+* feat: updates env (65363b9)
+* feat: updates semantic release conf (cc09fe9)
+
 ## [1.3.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.2.0...v1.3.0) (2026-06-16)
 
 ### Features
