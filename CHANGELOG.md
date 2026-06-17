@@ -1,3 +1,9 @@
+## [1.15.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.14.0...v1.15.0) (2026-06-17)
+
+### Features
+
+* feat: change scripts (ecef61b)
+
 ## [1.14.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.13.0...v1.14.0) (2026-06-17)
 
 ### Features
