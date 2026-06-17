@@ -1,3 +1,9 @@
+## [1.13.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.12.0...v1.13.0) (2026-06-17)
+
+### Features
+
+* feat: adds .npmignore to project (aab18d9)
+
 ## [1.12.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.11.0...v1.12.0) (2026-06-16)
 
 ### Features
