@@ -10,10 +10,10 @@ export class LoaderUtils {
         return typeof document !== "undefined";
     }
 
-    static querySelectorAll<K extends keyof HTMLElementTagNameMap>(
-        selector: K,
-    ): HTMLElementTagNameMap[K][] {
-        return Array.from(document.head.querySelectorAll(selector));
+    static querySelectorAll<E extends Element = Element>(
+        selector: string,
+    ): E[] {
+        return Array.from(document.head.querySelectorAll(selector)) as E[];
     }
 
     static isScriptLoaded(src: string): boolean {
@@ -23,7 +23,7 @@ export class LoaderUtils {
 
         const target = new URL(src, window.location.origin).href;
 
-        return this.querySelectorAll("script").some((script) => {
+        return this.querySelectorAll<HTMLScriptElement>("script[src]").some((script) => {
             return new URL(script.src).href === target;
         });
     }
@@ -35,7 +35,7 @@ export class LoaderUtils {
 
         const target = new URL(href, window.location.origin).href;
 
-        return this.querySelectorAll("link").some((link) => {
+        return this.querySelectorAll<HTMLLinkElement>("link[rel='stylesheet'][href]").some((link) => {
             return new URL(link.href).href === target;
         });
     }
@@ -165,7 +165,7 @@ export class LoaderUtils {
             console.warn("Error during destroy()", e);
         }
 
-        const scripts = document.querySelectorAll<HTMLScriptElement>("script");
+        const scripts = document.querySelectorAll<HTMLScriptElement>("script[src]");
 
         scripts.forEach((script) => {
             if (new URL(script.src).href === target) {
@@ -189,7 +189,7 @@ export class LoaderUtils {
 
         const target = new URL(href, window.location.origin).href;
 
-        const links = document.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"]');
+        const links = document.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"][href]');
 
         links.forEach((link) => {
             if (new URL(link.href).href === target) {
