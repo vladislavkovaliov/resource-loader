@@ -1,3 +1,13 @@
+## [1.15.1](https://github.com/vladislavkovaliov/resource-loader/compare/v1.15.0...v1.15.1) (2026-07-20)
+
+### Fixes
+
+* fix: exports types (ba876b5)
+
+### Chores
+
+* chore: removes unused actions github (93cccad)
+
 ## [1.15.0](https://github.com/vladislavkovaliov/resource-loader/compare/v1.14.0...v1.15.0) (2026-06-17)
 
 ### Features
